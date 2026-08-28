@@ -52,7 +52,7 @@ format:
       url: "https://cdn.jsdelivr.net/npm/mathjax@4.1.3/tex-mml-chtml.js"
     include-in-header:
       - styles/_macros.tex
-      - styles/jsonld.html
 
 filters:
   - filters/post-nav.lua
+  - filters/jsonld.lua
