@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "requires_quarto: integration test that shells out to `quarto render`",
+]
