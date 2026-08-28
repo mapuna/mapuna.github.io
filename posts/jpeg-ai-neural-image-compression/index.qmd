@@ -391,7 +391,7 @@ from the first channels and refines as the rest arrive, so a viewer or a
 downstream model can act on a preview before the full bitstream lands, and a
 server can send the remainder only when asked.
 
-## Baby-steps to "the Ludicrous Idea": Machine Vision and Task-Aware Coding {#sec-ludicrous}
+## Task-Aware Coding for Machine Vision {#sec-ludicrous}
 
 Everything above describes a codec for storing and reconstructing images for
 people. The reason I read it is @eq-transforms. The latent $\hat{y}$ is a
@@ -439,7 +439,7 @@ image, and @eq-rdt is a one-term change to make it sufficient for a task
 instead. Whether that is enough to do perception in the compressed domain is the
 open question, and the reason for the next post.
 
-## Further reading {#sec-refs}
+## Further Reading {#sec-refs}
 
 - C. E. Shannon, "A Mathematical Theory of Communication," 1948. Source coding
   theorem and entropy as a code-length bound.

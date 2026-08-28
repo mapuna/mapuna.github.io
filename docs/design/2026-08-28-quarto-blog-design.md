@@ -184,10 +184,17 @@ fields: [title, date, description, reading-time, categories]
   - **sans headings** — *Inter*, fallback `system-ui, sans-serif`;
   - **mono** — *JetBrains Mono*, fallback `ui-monospace, SFMono-Regular, monospace`;
   - `line-height: 1.65`, comfortable paragraph spacing, restrained link underlines;
+  - **justified prose** — `text-align: justify` + `hyphens: auto` on
+    `#quarto-document-content p, li` (article bodies only, not UI / listing cards /
+    captions / `.post-nav`);
   - right-margin TOC on ≥ `lg`, collapses inline below that;
   - `.post-nav` styling (see §8).
 - **Fonts self-hosted** as woff2 under `styles/fonts/`, referenced via `@font-face` with
   `font-display: swap`. No third-party font requests.
+
+**Authoring rule (all posts):** section headings are **Title Case**, compact
+professional noun phrases — never sentences or fragments. E.g. "Task-Aware Coding
+for Machine Vision", not "Baby-steps to the Ludicrous Idea: …".
 
 ## 8. Blog listing, feed, search, prev/next
 

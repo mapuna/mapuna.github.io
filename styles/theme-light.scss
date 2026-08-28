@@ -42,6 +42,13 @@ main.content,
 
 p, li { hyphens: auto; }
 
+// Justified prose in article bodies (not UI, listings, captions, or nav).
+#quarto-document-content p,
+#quarto-document-content li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font-family;
   letter-spacing: -0.01em;

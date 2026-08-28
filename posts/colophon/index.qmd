@@ -25,7 +25,7 @@ recognizing an equation and leaves raw TeX in the page.
 **Type.** The body is Source Serif 4, headings are Inter, code is JetBrains
 Mono, all served from this domain. No request leaves for a font CDN.
 
-## The equation the build checks
+## The Cross-Entropy Identity
 
 Every deploy typesets this page, so the equation below is also the site's
 smallest end-to-end test of the math path: a macro from the shared header, a
@@ -53,7 +53,12 @@ $$
 \end{align}
 $$
 
-## The figure the build runs
+## The Surprisal Curve
+
+Surprisal is $-\log_2 p$, the bits an ideal coder spends on a symbol the model
+assigned probability $p$. It is zero at $p = 1$ and grows without bound as $p \to
+0$: a symbol the model was certain of is free to send, and one it had all but
+ruled out is ruinously expensive.
 
 ```{python}
 #| label: fig-surprisal

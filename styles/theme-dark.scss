@@ -35,6 +35,15 @@ main.content,
 h1, h2, h3, h4, h5, h6 { font-family: $headings-font-family; line-height: 1.25; }
 pre, code, kbd, samp { font-family: $font-family-monospace; font-size: 0.85em; }
 
+p, li { hyphens: auto; }
+
+// Justified prose in article bodies (not UI, listings, captions, or nav).
+#quarto-document-content p,
+#quarto-document-content li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .post-nav { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid $border-color; display: flex; gap: 1.5rem; }
 .post-nav__prev, .post-nav__next { display: flex; flex-direction: column; gap: 0.15rem; max-width: 48%; }
 .post-nav__next { margin-left: auto; text-align: right; }
