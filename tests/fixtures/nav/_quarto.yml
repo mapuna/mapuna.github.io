@@ -1,0 +1,13 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: scripts/build_manifest.py
+  render:
+    - "posts/"
+website:
+  site-url: "https://example.com"
+filters:
+  - filters/post-nav.lua
+format:
+  html:
+    theme: default

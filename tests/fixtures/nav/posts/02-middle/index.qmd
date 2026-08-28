@@ -1,0 +1,7 @@
+---
+title: "Middle post"
+date: "2026-01-02"
+description: "fixture middle"
+---
+
+Middle body.
