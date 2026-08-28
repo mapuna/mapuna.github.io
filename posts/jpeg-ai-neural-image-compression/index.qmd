@@ -7,13 +7,13 @@ description: >
 author: "Anupam Gupta"
 date: "2026-05-04"
 categories: [compression, machine-learning, information-theory]
-image: jpeg-ai-slide.png
+image: jpeg-ai-slide.webp
 image-alt: "Title slide reading JPEG AI: neural image compression, standardized."
 number-sections: true
 toc: true
 ---
 
-![Title slide. AI-generated.](jpeg-ai-slide.png){#fig-hero}
+![Title slide. AI-generated.](jpeg-ai-slide.webp){#fig-hero}
 
 JPEG AI keeps the accounting of a classical codec and discards the fixed parts.
 Rate, distortion, entropy, quantization: all still here. The Discrete Cosine

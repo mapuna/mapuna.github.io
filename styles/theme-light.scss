@@ -1,5 +1,77 @@
 /*-- scss:defaults --*/
-// Real values land in Task 4.
+
+// Suppress the Bootswatch theme's Google Fonts @import (self-hosted only).
+$web-font-path: "";
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !default;
+$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif !default;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace !default;
+
+$body-color: #1a1a1a !default;
+$body-bg: #fdfdfc !default;
+$link-color: #0b5cad !default;
+$border-color: #e3e3e0 !default;
+
+$font-size-root: 19px !default;
+$line-height-base: 1.65 !default;
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 600 !default;
 
 /*-- scss:rules --*/
-// Real rules land in Task 4.
+
+@import "_fonts";
+
+:root {
+  --content-max-width: 46rem;
+  --post-nav-muted: #6b6b66;
+}
+
+body {
+  font-family: $font-family-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+}
+
+// Single-column reading measure. Cap the prose column; leave the
+// right-margin TOC alone.
+main.content,
+#quarto-document-content,
+#title-block-header {
+  max-width: var(--content-max-width);
+}
+
+p, li { hyphens: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+pre, code, kbd, samp { font-family: $font-family-monospace; font-size: 0.85em; }
+
+a { text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+/* prev/next navigation (markup from filters/post-nav.lua) */
+.post-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid $border-color;
+}
+.post-nav__prev,
+.post-nav__next { display: flex; flex-direction: column; gap: 0.15rem; max-width: 48%; }
+.post-nav__next { margin-left: auto; text-align: right; }
+.post-nav__label {
+  font-family: $font-family-sans-serif;
+  font-size: 0.8rem;
+  color: var(--post-nav-muted);
+}
+.post-nav a { font-family: $font-family-sans-serif; font-weight: 600; }
+
+@media (max-width: 575.98px) {
+  .post-nav { flex-direction: column; gap: 1rem; }
+  .post-nav__prev,
+  .post-nav__next { max-width: 100%; text-align: left; margin-left: 0; }
+}
