@@ -1,10 +1,9 @@
 ---
 title: "JPEG AI: Neural Image Compression, Standardized"
 description: >
-  A derivation-first walk through JPEG AI: learned analysis and synthesis
-  transforms, the additive-uniform-noise relaxation of quantization, the scale
-  hyperprior, Gaussian-mixture context models, gain-based rate control, and why
-  the latents interest me for compressed-domain vision.
+  How JPEG AI replaces the DCT with learned transforms, a scale-hyperprior
+  entropy model, and gain-based rate control, and why its latents interest me
+  for compressed-domain vision.
 author: "Anupam Gupta"
 date: "2026-05-04"
 categories: [compression, machine-learning, information-theory]
