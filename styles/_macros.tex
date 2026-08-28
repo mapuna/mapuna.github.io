@@ -1,1 +1,12 @@
-<!-- Site-wide MathJax macros. Real content lands in Task 5. -->
+<!-- Site-wide MathJax macros, available in every page. MathJax reads the TeX
+     inside the hidden \(...\) below at load time and registers the commands.
+     scripts/check_math.py skips the element with id="mathjax-macros". -->
+<div id="mathjax-macros" style="display:none">
+\(
+  \newcommand{\R}{\mathbb{R}}
+  \newcommand{\E}{\mathbb{E}}
+  \newcommand{\KL}[2]{D_{\mathrm{KL}}\!\left(#1 \,\middle\|\, #2\right)}
+  \newcommand{\argmin}{\operatorname*{arg\,min}}
+  \newcommand{\ind}{\mathbf{1}}
+\)
+</div>
