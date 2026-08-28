@@ -1,0 +1,15 @@
+# Quarto build output
+/_site/
+/.quarto/
+
+# Pre-render build artifact (regenerated every render)
+/_manifest.lua
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS
+.DS_Store

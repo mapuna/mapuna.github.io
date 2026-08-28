@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: scripts/build_manifest.py
+  render:
+    - "*.qmd"
+    - "posts/"
+    - "!docs/"
+    - "!tests/"
+    - "!README.md"
+  resources:
+    - fonts/
+    - robots.txt
+
+website:
+  title: "Bits and Priors"
+  description: "Anupam Gupta on machine learning, information theory, and compression. Derivations, some code."
+  site-url: "https://mapuna.github.io"
+  open-graph: true
+  twitter-card:
+    creator: "@mapuna"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+    right:
+      - icon: rss
+        href: index.xml
+      - icon: github
+        href: "https://github.com/mapuna"
+      - icon: twitter-x
+        href: "https://x.com/mapuna"
+  search:
+    location: navbar
+    type: overlay
+  page-footer:
+    center: "© 2026 Anupam Gupta · Built with Quarto"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/theme-light.scss]
+      dark: [darkly, styles/theme-dark.scss]
+    toc: true
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+    include-in-header:
+      - styles/_macros.tex
+      - styles/jsonld.html
+
+filters:
+  - filters/post-nav.lua
