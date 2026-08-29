@@ -2,12 +2,13 @@
 title: "About"
 ---
 
-I'm Anupam Gupta. Online I go by Next Door Geek. This blog continues one I kept
-at [lifemath.wordpress.com](https://lifemath.wordpress.com/); some of the older
-posts may follow me here.
+I'm Anupam Gupta. Online, I go by "Next Door Geek", and sometimes as "mapuna".
 
-I run a company. Around that I do research, write code, and teach when someone
-lets me.
+This blog continues one I kept at [lifemath.wordpress.com](https://lifemath.wordpress.com/); 
+some of the older posts may follow me here.
+
+I run a company... No. I run the tech and research at more than one companies.
+Around those, I do research, write code, and teach when someone lets me.
 
 What shows up here: machine learning, information theory, information retrieval,
 and the probability, optimization, and combinatorics they run on (cs.LG,
@@ -20,14 +21,8 @@ Most posts circle one question. Given a task, what is the least you can store or
 transmit and still do the task well? For a photograph shown to a person the task
 is perception, and the answer is classical rate-distortion theory. For a
 classifier, a detector, or a language model the task is something else, and the
-compressed form might feed the model directly, with no image ever reconstructed.
-The version I want to build I have been calling the ludicrous idea: one codec
-trained against rate, distortion, and a downstream task loss at once, doing the
-task in the compressed domain. The
-[JPEG AI post](/posts/jpeg-ai-neural-image-compression/) is where that started.
-
-Code in a post is code that ran. Every figure is the output of a cell on the
-page.
+compressed form might feed the model directly, with NO actual modality of the 
+input ever reconstructed.
 
 ## Contact
 
